@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(#D9DFDF 50%, #1B1B1B 50%);
+}
+
+#preloader
+{
+    background: #1B1B1B url(images/poopify.png) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 60%;
+}
+
+/* ============MENU============ */
+
+.menu-icon
+{
+    margin: 0 2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-icon i
+{
+    font-size: 1.2rem;
+    color: #1B1B1B;
+}
+
+.cover
+{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover img
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+}
+
+/* =========COVER========== */
+
+.music-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 55%;
+}
+.music-container .title
+{
+    padding-top: 1rem;
+    color: rgb(201, 194, 194);
+    text-align: center;
+    font-weight: 400;
+}
+.music-container .sub-title
+{
+    padding-top: 0.7rem;
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.music-container .fav-icon
+{
+    background-color:transparent;
+    border: 0;
+    color: rgba(168, 168, 168, 0.603);
+    font-size: 1rem;
+    margin-left: 2.7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+.fav-icon:focus
+{
+    outline: 0;
+}
+.music-info.fav .fav-icon
+{
+    color: red;
+}
+.progress-container
+{
+    margin-top: 1rem;
+    background-color: rgb(201, 194, 194);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 3px;
+    width: 50%;
+}
+.progress
+{
+    background-color: #F67703;
+    border-radius: 5px;
+    height: 3px;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* =============NAVIGATION================ */
+.navigation
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 60%;
+    z-index: 1;
+}
+.action-btn
+{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+.action-btn-big
+{
+    font-size: 1.8rem;
+}
+.action-btn:focus
+{
+    outline: 0;
+}
